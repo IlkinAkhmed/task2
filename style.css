@@ -1,16 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .bgimage {
     background-image: url(https://png.pngtree.com/background/20230417/original/pngtree-website-ipl-building-picture-image_2447424.jpg);
-    position: fixed;
-    width: 100vw;
+    width: 100wh;
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+    position: relative;
 }
 
 .logo {
@@ -22,7 +28,7 @@
     left: 50px;
     top: 15px;
     font-size: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .fa-warehouse.fa-warehouse {
@@ -34,17 +40,22 @@ h1 {
     color: white;
     background-color: rgb(83, 83, 83);
     width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    z-index: 1;
 }
 
 .navbar {
     position: sticky;
     top: 0;
-    background-color: rgb(93, 90, 90, 0.625);
+    background-color: rgb(180, 180, 180);
     height: 80px;
+    width: 100wh;
+    z-index: 1;
 }
 
 .navtext {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     position: absolute;
 }
@@ -132,13 +143,17 @@ a:hover {
     transition: 0.5s;
 }
 
-.left {
+.right {
     position: relative;
     width: 400px;
     height: 530px;
     background-color: rgb(255, 255, 255, 0.625);
     left: 1020px;
-    top: 80px;
+    top: 40px;
+}
+
+.right:hover {
+    box-shadow: 10px 10px 10px;
 }
 
 .inside {
@@ -181,7 +196,7 @@ hr {
     margin-top: 90px;
     position: absolute;
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     padding: 10px 115px;
     color: white;
     background-color: gray;
@@ -210,4 +225,199 @@ hr {
 
 .sectexts {
     background-color: gray;
+    padding: 10px;
+}
+
+.left {
+    position: relative;
+    width: 400px;
+    height: 530px;
+    background-color: transparent;
+    bottom: 400px;
+    left: 150px;
+}
+
+.inside2 {
+    position: absolute;
+    padding: 20px;
+    width: 300px;
+}
+
+#middleButton {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 4px;
+    padding: 10px 30px;
+    top: 330px;
+}
+
+.bigtext {
+    position: absolute;
+    top: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.smalltext {
+    top: 250px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+#middleButton:hover {
+    background-color: black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.uptexts {
+    position: relative;
+    text-align: center;
+    width: 600px;
+    height: 160px;
+    top: 100px;
+    left: 450px;
+}
+
+#solutions {
+    position: absolute;
+    font-size: 40px;
+    left: 30px;
+    font-weight: bold;
+}
+
+#brochure {
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    left: 115px;
+}
+
+.boxes {
+    position: relative;
+    left: 230px;
+    top: 150px;
+    right: 100px;
+    height: 400px;
+}
+
+.box {
+    height: 300px;
+    float: left;
+    width: 25%;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.fa-solid.fa-house {
+    font-size: 50px;
+}
+
+.hometext {
+    position: absolute;
+    top: 70px;
+}
+
+.box1link {
+    position: absolute;
+    top: 100px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    width: 300px;
+    color: rgb(71, 3, 3);
+}
+
+.box1p {
+    top: 170px;
+    position: absolute;
+    font-size: 20px;
+    width: 300px;
+    font-family: 'Young Serif', serif;
+}
+
+.box1link:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.fa-solid.fa-car {
+    font-size: 50px;
+}
+
+.cartext {
+    position: absolute;
+    top: 70px;
+    width: 300px;
+}
+
+.box2link {
+    position: absolute;
+    top: 100px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    width: 300px;
+    color: rgb(71, 3, 3);
+}
+
+.box2p {
+    top: 170px;
+    position: absolute;
+    font-size: 20px;
+    width: 300px;
+    font-family: 'Young Serif', serif;
+}
+
+.box2link:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.box:hover {
+    background-color: rgb(196, 133, 16);
+    transition: 0.5s;
+    color: white;
+}
+
+.fa-solid.fa-city {
+    font-size: 50px;
+}
+
+.businesstext {
+    position: absolute;
+    top: 70px;
+    width: 300px;
+}
+
+.box3link {
+    position: absolute;
+    top: 100px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    width: 300px;
+    color: rgb(71, 3, 3);
+}
+
+.box3p {
+    top: 190px;
+    position: absolute;
+    font-size: 20px;
+    width: 300px;
+    font-family: 'Young Serif', serif;
+}
+
+.box3link:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.insidebox {
+    padding: 15px;
 }
